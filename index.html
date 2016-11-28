@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Base - Главная</title>
+	<meta name="description" content="">
+	
+	<!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/animate.css">
+   
+</head>
+<body>    
+  
+   <!-- MODALS 
+    <div class="thx"><p>СПАСИБО! С ВАМИ СВЯЖЕТСЯ НАШ МЕНЕДЖЕР</p></div>
+    <div class="modal-back"></div>
+        
+    <div class="modal">
+    <div class="modal-close"></div>
+             
+    <span><div class="modal-line"></div>Оставьте Ваши контактные данные,
+и наши менеджеры свяжутся с Вами</span>
+            
+        <form method="post" action="">      
+            <!-- Hidden Required Fields 
+            <input type="hidden" name="project_name" value="aurora.kz">
+            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields 
+
+            <input type="text" name="ФИО" placeholder="ФИО" required>
+            <input type="email" name="Почта" placeholder="E-mail">
+
+            <input type="tel" id="client-tel-for-consult" name="Телефон" placeholder="Телефон" required>
+            
+            <div class="modal-wrapper">
+                <button class="modal-button"><div class="modalb-line"></div><p>ОТПРАВИТЬ</p></button>
+            </div>
+        </form>
+    </div>       
+    <div class="modal-border"></div> 
+    <!-- END OF MODALS -->
+      
+      
+    <header class="header">
+            <div class="header-top">
+                <div class="wrap">
+                    <a href="">список тегов</a>
+                    <a href="">реклама</a>
+                    <a href="">тех поддержка</a>
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="wrap">
+                    <div class="h-logos">
+                        <div class="h-logo-m">
+                            <img src="./img/base-logo.png" alt="">
+                        </div>
+                        <div class="h-exp">
+                            <img src="./img/logo-explanation.png" alt="">
+                            <p>Развлекательный портал</p>
+                        </div>
+                    </div>
+                    <div class="h-login">
+                        <div class="h-signed">
+                            <button class="add-btn">
+                                + Добавить пост
+                            </button>
+                            <div class="login-nick">
+                                <p>JOHN DOE</p>
+                                <div><span>+401</span> рейтинг</div>
+                            </div>
+                            <div class="login-ava">
+                                <img src="./img/ava.png" alt="">
+                                <div class="login-rate">
+                                    12
+                                </div>
+                                <span><img src="./img/ava-arr.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="h-not-signed">
+                            <span>Регистрация</span>
+                            <button class="login-btn">Войти</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </header>
+      
+    <section class="navigation">
+        <div class="wrap">
+            <div class="nav nav-active">
+                ВСЕ 
+                <span></span>
+            </div>
+            <div class="nav">
+                ЮМОР
+                <span></span>
+            </div>
+            <div class="nav">
+                НОВОСТИ 
+                <span></span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="after-navigation">
+        <div class="wrap">
+            <div class="after-nav after-active">По актуальности</div>
+            <div class="after-nav">За сегодня</div>
+        </div>
+    </section>
+       
+       
+    
+<script src="js/jquery-2.2.3.min.js"></script>
+    
+<script src="js/jquery.min.js"></script>
+	
+<script src="js/jquery.waypoints.min.js"></script>
+  
+<script src="js/slick.min.js"></script>
+<script>
+    $('#slick-slider').slick({
+        slidesToShow: 5,
+        centerPadding: '0px',
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+    ]
+    });
+</script>
+   
+<script src="js/aurora.js"></script>
+    
+<script src="js/wow.min.js"></script>
+<script>
+    if ($(window).width() > 1200) {
+        new WOW().init();
+    }
+</script>
+    
+<script src="js/maskedinput.js"></script>
+<script type="text/javascript">	
+    jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
+    jQuery(function($){$("#client-tel-for-consult-2").mask("+7(999)999-99-99");});
+</script>
+   
+<script src="js/script.js"></script>
+
+ <script>
+        var RunOnce = 1;
+    
+        $('.exp-numbers').waypoint( function(dir) {
+        
+                    if (RunOnce == 1) {
+            
+                         RunOnce = false;
+            
+                        $({n: 0}).animate({n: 18}, {
+                            duration: 2E3,
+                            step: function (a) {
+                                $("#val-1").html(Math.round(a))
+                            }
+                        })
+                        $({n: 0}).animate({n: 264}, {
+                            duration: 2E3,
+                            step: function (a) {
+                                $("#val-2").html(Math.round(a))
+                            }
+                        })
+                        $({n: 0}).animate({n: 45857}, {
+                            duration: 2E3,
+                            step: function (a) {
+                                $("#val-3").html(Math.round(a))
+                            }
+                        })
+                    }
+                        
+           }, {
+            offset: '100%'
+        }) 
+</script>
+
+<script type="text/javascript">
+        $(document).ready(function(){ 
+            
+            $('.art-slide').eq( 0 ).css('background', 'url(' + $('.art-slide img').eq( 0 ).attr('src') + ')  center center no-repeat');
+            $('.art-slide').eq( 0 ).css('background-size', 'cover');
+                
+            $('.article h2').click(function() {
+
+                var index = $(".article h2").index(this);
+                
+                $('.header-slide').hide();
+                
+                $('.art-slide').hide();
+                
+                console.log( index );
+                
+                var imgSrc = $('.art-slide img').eq( index ).attr('src');
+                
+                $('.art-slide').eq( index ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
+                $('.art-slide').eq( index ).css('background-size', 'cover');
+
+                $('.art-slide').eq( index ).show();
+                
+                $('.dynamic').html( index+1 );
+                
+                $('.slide-nav').removeClass('sd-nav-act');
+                $('.slide-nav').eq( index ).addClass('sd-nav-act');
+            /*
+            },function(){
+                
+                $('.art-slide').hide();
+                
+                $('.header-slide').show();
+                
+                $('.dynamic').html( '0' );
+            */                          
+            });
+        
+            
+            $('.slide-nav').click(function() {
+
+                var indexN = $(".slide-nav").index(this);
+                
+                $('.header-slide').hide();
+                
+                $('.art-slide').hide();
+                
+                var imgSrc = $('.art-slide img').eq( indexN ).attr('src');
+                
+                $('.art-slide').eq( indexN ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
+                $('.art-slide').eq( indexN ).css('background-size', 'cover');
+
+                $('.art-slide').eq( indexN ).show();
+                
+                $('.dynamic').html( indexN+1 );
+                
+                $('.slide-nav').removeClass('sd-nav-act');
+                $('.slide-nav').eq( indexN ).addClass('sd-nav-act');
+            /*
+            },function(){
+                
+                $('.art-slide').hide();
+                
+                $('.header-slide').show();
+                
+                $('.dynamic').html( '0' );
+            */           
+            });
+        
+        });
+    
+    
+</script>
+
+</body>
+</html>

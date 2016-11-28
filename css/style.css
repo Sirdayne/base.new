@@ -1,0 +1,225 @@
+body{
+    float: left;
+    width: 100%;
+}
+.wrap{
+    display: block;
+    float: none;
+    margin: auto;
+    max-width: 1450px;
+    height: auto;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header{
+    float: left;
+    width: 100%;
+}
+.header-top{
+    float: left;
+    width: 100%;
+    background: #55394d;
+}
+.header-top a{
+    float: right;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 25px;
+}
+.header-mid{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding-top: 13px;
+    padding-bottom: 16px;
+}
+.h-logos{
+    float: left;
+    height: 70px;
+}
+.h-logo-m{
+    float: left;
+    height: inherit;
+}
+.h-logo-m img{
+    height: inherit;
+}
+.h-exp{
+    float: left;
+    height: inherit;
+    width: 340px;
+    margin-left: 25px;
+}
+.h-exp img{
+    float: left;
+    height: 30px;
+    margin-top: 13px;
+}
+.h-exp p{
+    float: left;
+    line-height: 23px;
+    font-size: 14px;
+    color: #55394d;
+}
+.h-login{
+    float: right;
+    height: 70px;
+}
+.h-signed, .h-not-signed{
+    float: left;
+    width: 100%;
+}
+.h-not-signed{
+    display: none;
+}
+.add-btn{
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    outline: none;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    background: #ffb55d;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 15px;
+}
+.login-nick{
+    float: left;
+    height: inherit;
+    margin-left: 25px;
+}
+.login-nick p{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #797070;
+    font-size: 16px;
+}
+.login-nick div{
+    color: #b9b9b9;
+    font-size: 14px;
+}
+.login-nick span{
+    color: #ffb53e;
+    font-size: 14px;
+    font-weight: bold;
+}
+.login-ava{
+    float: left;
+    height: 70px;
+    margin-left: 25px;
+    margin-right: 10px;
+    
+    position: relative;
+}
+.login-ava img{
+    margin-top: 12px;
+    height: 50px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.login-rate{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    color: #fff;
+    background: #55394d;
+    font-size: 12px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 15px;
+    padding: 0px 4px;
+}
+.login-ava span{
+    position: absolute;
+    top: 23px;
+    right: -12px;
+    width: 10px;
+}
+.login-ava span img{
+    width: 8px;
+    height: 6px; 
+}
+
+.login-btn{
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    
+    outline: none;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    background: #ffb55d;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 25px;
+}
+.h-not-signed span{
+    float: left;
+    margin-top: 26px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    
+    color: #55394d;
+}
+.navigation{
+    float: left;
+    width: 100%;
+    
+    background: #ffb55d;
+    height: 35px;
+}
+.nav{
+    float: left;
+    margin-right: 25px;
+    
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.nav-active{
+    color: #55394d;
+}
+.nav-active span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    height: 3px;
+    width: 100%;
+    background: #55394d;
+}
+
+.after-navigation{
+    float: left;
+    width: 100%;
+    
+    background: #dddddd;
+    height: 25px;
+}
+.after-nav{
+    float: left;
+    margin-right: 25px;
+    color: #55394d;
+    line-height: 25px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.after-active{
+    text-decoration: underline;
+}
