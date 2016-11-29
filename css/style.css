@@ -1,12 +1,15 @@
 body{
     float: left;
     width: 100%;
+    
+    background: #f6f6f6;
 }
 .wrap{
     display: block;
     float: none;
     margin: auto;
     max-width: 1450px;
+    min-width: 900px;
     height: auto;
     
     padding-left: 25px;
@@ -93,7 +96,7 @@ body{
 .login-nick{
     float: left;
     height: inherit;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 .login-nick p{
     margin-top: 20px;
@@ -113,7 +116,7 @@ body{
 .login-ava{
     float: left;
     height: 70px;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-right: 10px;
     
     position: relative;
@@ -183,7 +186,7 @@ body{
 }
 .nav{
     float: left;
-    margin-right: 25px;
+    margin-right: 35px;
     
     line-height: 35px;
     font-weight: bold;
@@ -204,7 +207,55 @@ body{
     width: 100%;
     background: #55394d;
 }
-
+.nav-search{
+    float: right;
+    height: 20px;
+    margin-top: 7px;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 1px solid #55394d;
+    width: 205px;
+}
+.nav-search input{
+    float: left;
+    width: 139px;
+    max-width: 139px;
+    height: 20px;
+    padding-left: 15px;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    font-size: 12px;
+    line-height: 20px;
+    
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,0);
+}
+.search-img{
+    float: left;
+    width: 50px;
+    height: 18px;
+    margin-top: 1px;
+    
+    background: #55394d;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    cursor: pointer;
+}
+.search-img img{
+    display: block;
+    margin: 4px auto;
+    float: none;
+    height: 10px;
+}
 .after-navigation{
     float: left;
     width: 100%;
@@ -222,4 +273,494 @@ body{
 }
 .after-active{
     text-decoration: underline;
+}
+.aside{
+    float: left;
+    width: 320px;
+    
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.p-login{
+    float: left;
+    width: 100%;
+    
+    padding: 25px;
+    box-sizing: border-box;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    background: #fff;
+}
+.pl-logo{
+    float: left;
+    width: 100%;
+    
+    height: 70px;
+}
+.pl-logo img{
+    display: block;
+    float: none;
+    margin: auto;
+    
+    height: inherit;
+}
+.pl-row{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    
+    border-bottom: 1px solid #dddddd;
+    
+    text-align: center;
+}
+.pl-input{
+    float: left;
+    width: 100%;
+    height: 20px;
+    padding: 7px 15px;
+    
+    box-sizing: border-box;
+    margin-top: 15px;
+    
+    font-size: 14px;
+    line-height: 20px;
+    
+    border: none;
+    border-bottom: 1px solid #55394d;
+    outline: none;
+    background: rgba(0,0,0,0);
+
+    color: #323232;
+}
+.js-aut, .js-reg{
+    display: inline-block;
+    width: auto;
+    color: #55394d;
+    font-weight: bold;
+    margin: 0 5px;
+    
+    cursor: pointer;
+}
+.js-aut.js-active, .js-reg.js-active{
+    color: #ffb53e;
+    text-decoration: underline;
+}
+.pl-btn-wrap{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+.pl-btn{
+    display: inline-block;
+    
+    width: auto;
+    padding: 5px 25px;
+    
+    color: #fff;
+    
+    outline: none;
+    border: none;
+    
+    background: #ffb55d;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    font-size: 14px;
+}
+.pl-rem{
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 15px;
+}
+.pl-rem input, .pl-rem label{
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 20px;
+}
+.pl-icons{
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 26px;
+    margin-top: 0px;
+}
+.pl-log{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    
+    height: 26px;
+    
+    font-size: 12px;
+    line-height: 26px;
+}
+.pl-icon1, .pl-icon2, .pl-icon3, .pl-icon4{
+    display: inline-block;
+    vertical-align: middle;
+    
+    height: 22px;
+    width: 22px;
+    
+    background: url(../img/soc-icons.png) no-repeat;
+    cursor: pointer;
+}
+.pl-icon1{
+    background-position: 0px 0px;
+    background-size: cover;
+}
+.pl-icon2{
+    background-position: -44px 0px;
+    background-size: cover;
+}
+.pl-icon3{
+    background-position: -88px 0px;
+    background-size: cover;
+}
+.pl-icon4{
+    background-position: -132px 0px;
+    background-size: cover;
+}
+
+.pl-icon1:hover{
+    background-position: -22px 0px;
+    background-size: cover;
+}
+.pl-icon2:hover{
+    background-position: -66px 0px;
+    background-size: cover;
+}
+.pl-icon3:hover{
+    background-position: -110px 0px;
+    background-size: cover;
+}
+.pl-icon4:hover{
+    background-position: -154px 0px;
+    background-size: cover;
+}
+.js-form-reg{
+    display: none;
+}
+
+.top-comments, .top-users{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    
+    padding: 25px;
+    box-sizing: border-box;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    background: #fff;
+}
+.top-title{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+}
+.top-title p{
+    float: left;
+    width: 100%;
+    
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffb53e;
+}
+.top-time{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.top-time span{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #adadad;
+    cursor: pointer;
+}
+.time-active{
+    text-decoration: underline;
+}
+
+.top-comment{
+    float: left;
+    width: 100%;
+    
+    margin-top: 15px;
+    padding-bottom: 15px;
+    
+    border-bottom: 1px solid #dddddd;
+}
+.top-comment h2{
+    float: left;
+    width: 100%;
+    color: #ffb53e;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 16px;
+}
+.top-comment p{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #797070;
+}
+.top-user{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top-user img{
+    float: left;
+    height: 50px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+.top-author{
+    float: left;
+    width: calc(100% - 50px);
+    
+    padding: 5px 15px;
+    box-sizing: border-box;
+    
+}
+.top-author h3{
+    float: left;
+    width: 100%;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: #797070;
+}
+.top-rate{
+    float: left;
+    width: auto;
+    margin-right: 3px;
+    color: #ffb53e;
+    font-weight: bold;
+    font-size: 14px;
+}
+.top-num-time{
+    float: left;
+    width: auto;
+    margin-right: 3px;
+    color: #797070;
+    font-size: 14px;
+}
+.def-text{
+    float: left;
+    width: auto;
+    color: #797070;
+    font-size: 14px;
+}
+
+.posts{
+    float: left;
+    width: calc(100% - 350px);
+    background: #f6f6f6;
+    
+    padding-top: 30px;
+}
+.post{
+    float: left;
+    margin: 0 25px 25px 65px;
+    
+    padding: 25px;
+    box-sizing: border-box;
+    
+    width: calc(100% - 65px);
+    
+    background: #fff;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    position: relative;
+}
+.p-rate{
+    position: absolute;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    top: 0;
+    left: -65px;
+    
+    width: 34px;
+    padding: 10px 6px;
+    
+    box-sizing: border-box;
+    height: auto;
+    
+    background: #fff;
+}
+.p-up, .p-down{
+    float: left;
+    
+    width: 22px;
+    height: 22px;
+    
+    background: url(../img/rate-arrows.png) no-repeat;
+    cursor: pointer;
+    
+    -webkit-transition: 0s linear;
+    transition: 0s linear;
+}
+.p-up{
+    background-position: 0px 0px;
+}
+.p-down{
+    background-position: -44px 0px;
+}
+.p-up.p-active{
+    background-position: -22px 0px;
+}
+.p-down.p-active{
+    background-position: -66px 0px;
+}
+.p-up:hover{
+    background-position: -22px 0px;
+}
+.p-down:hover{
+    background-position: -66px 0px;
+}
+.p-num{
+    float: left;
+    
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    writing-mode: tb-rl;
+    
+    height: auto;
+    width: 22px;
+     
+    margin-top: 15px;
+    margin-bottom: 11px;
+    
+    color: #797070;
+    
+    font-size: 15px;
+    font-weight: bold;
+}
+.p-title{
+    float: left;
+    width: 100%;
+    
+    position: relative;
+}
+.p-plus, .p-save{
+    position: absolute;
+    
+    width: 16px;
+    height: 17px;
+    
+    top: 5px;
+}
+.p-save{
+    right: 0;
+}
+.p-plus{
+    right: 30px;
+}
+.p-plus img, .p-save img{
+    height: inherit;
+    width: inherit;
+    cursor: pointer;
+}
+.p-title p{
+    float: left;
+    color: #ffb53e;
+    
+    font-size: 18px;
+    font-weight: bold;
+    
+    width: calc(100% - 100px);
+}
+.p-comments{
+    float: left;
+    width: calc(100% - 300px);
+    width: auto;
+    height: 25px;
+    margin-top: 5px;
+}
+.p-comments span, .p-comments p, .p-time, .p-user, .p-coms{
+    float: left;
+    font-size: 14px;
+    line-height: 25px;
+    margin-right: 4px;
+}
+.p-coms{
+    margin-right: 15px;
+}
+.p-comments span, .p-user{
+    color: #ffb53e;
+}
+.p-user{
+    text-decoration: underline;
+}
+.p-time, .p-comments p, .p-coms{
+    color: #797070;
+}
+.p-tags{
+    float: right;
+    width: auto;
+    
+    text-align: right;
+}
+.p-tag{
+    display: inline-block;
+    color: #797070;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    padding: 5px 20px;
+    background: #f0f0f0;
+    font-size: 12px;
+}
+.p-content{
+    float: left;
+    width: 100%;
+    
+    border-top: 1px solid #dddddd;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.p-content p{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #797070;
+}
+.p-content img{
+    max-width: 100%;
 }
