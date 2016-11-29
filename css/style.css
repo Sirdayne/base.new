@@ -764,3 +764,157 @@ body{
 .p-content img{
     max-width: 100%;
 }
+
+
+
+/* The switch - the box around the slider */
+.switch-checkbox {
+    position: relative;
+    
+    float: left;
+    width: 22px;
+    height: 50px;
+    
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+/* Hide default HTML checkbox */
+.switch-checkbox input {display:none;}
+/* The slider */
+.slider-checkbox {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: #55394d;
+    -webkit-transition: .4s;
+    transition: .4s;
+    font: 18px/26px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-weight: 5;
+}
+.slider-checkbox:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: -2.5px;
+    bottom: 26px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid #787171;
+}
+input:checked + .slider-checkbox {
+    background-color: #f2b44a;;
+}
+input:focus + .slider-checkbox {
+    box-shadow: 0 0 1px #f2b44a;;
+}
+input:checked + .slider-checkbox:before {
+    -webkit-transform: translateY(26px);
+    -ms-transform: translateY(26px);
+    transform: translateY(26px);
+}
+/* Rounded sliders */
+.slider-checkbox.round {
+    border-radius: 34px;
+}
+.slider-checkbox.round:before {
+    border-radius: 50%;
+}
+.slider-checkbox img{
+    width: 10px;
+    margin-left: 6px;
+    margin-bottom: 2px;
+}
+.footer{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    background: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer-left{
+    float: left;
+    width: 315px;
+    height: 70px;
+}
+.footer-left img{
+    float: left;
+    height: 70px;
+    margin-right: 35px;
+}
+.f-icon1, .f-icon2, .f-icon3, .f-icon4{
+    display: inline-block;
+    margin-top: 12px;
+    
+    height: 44px;
+    width: 44px;
+    
+    background: url(../img/soc-icons.png) no-repeat;
+    cursor: pointer;
+}
+.f-icon1{
+    background-position: 0px 0px;
+    background-size: cover;
+}
+.f-icon2{
+    background-position: -88px 0px;
+    background-size: cover;
+}
+.f-icon3{
+    background-position: -176px 0px;
+    background-size: cover;
+}
+.f-icon4{
+    background-position: -264px 0px;
+    background-size: cover;
+}
+
+.f-icon1:hover{
+    background-position: -44px 0px;
+    background-size: cover;
+}
+.f-icon2:hover{
+    background-position: -132px 0px;
+    background-size: cover;
+}
+.f-icon3:hover{
+    background-position: -220px 0px;
+    background-size: cover;
+}
+.f-icon4:hover{
+    background-position: -308px 0px;
+    background-size: cover;
+}
+.footer-mid{
+    float: left;
+    width: calc(100% - 615px);
+    text-align: center;
+}
+.footer-mid .nav{
+    display: inline-block;
+    float: none;
+    
+    margin-top: 18px;
+    color: #55394d;
+}
+.footer-right{
+    float: left;
+    width: 300px;;
+    height: 70px;
+}
+.footer-right p{
+    float: left;
+    color: #ffb53e;
+    margin-right: 10px;
+    margin-top: 23px;
+}
+.footer-right img{
+    float: left;
+    margin-top: 20px;
+}
