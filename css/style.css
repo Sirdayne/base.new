@@ -4,6 +4,32 @@ body{
     
     background: #f6f6f6;
 }
+.modal-back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5000px;
+    
+    background: rgba(0,0,0,0.3);
+    z-index: 10;
+}
+.modal-form-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: 11;
+}
+.modal-form{
+    display: block;
+    margin: 100px auto;
+    
+    background: #fff;
+    height: auto;
+    width: 390px;
+}
 .wrap{
     display: block;
     float: none;
@@ -36,9 +62,16 @@ body{
     float: left;
     width: 100%;
     background: #fff;
+    /*
     padding-top: 13px;
     padding-bottom: 16px;
+    */
 }
+.h-logos, .login-nick{
+    margin-top: 13px;
+    margin-bottom: 16px;
+}
+
 .h-logos{
     float: left;
     height: 70px;
@@ -80,8 +113,8 @@ body{
 }
 .add-btn{
     float: left;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 38px;
+    margin-bottom: 41px;
     
     outline: none;
     -webkit-border-radius: 25px;
@@ -92,6 +125,12 @@ body{
     color: #fff;
     font-size: 14px;
     padding: 4px 15px;
+    
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+.add-btn:hover, .pl-btn:hover, .login-btn:hover{
+    background: #ff961a;
 }
 .login-nick{
     float: left;
@@ -115,14 +154,22 @@ body{
 }
 .login-ava{
     float: left;
-    height: 70px;
-    margin-left: 35px;
-    margin-right: 10px;
+    height: 99px;
+    width: 70px;
+    margin-left: 25px;
+    margin-right: 0px;
     
     position: relative;
+    cursor: pointer;
 }
+.login-ava:hover{
+    background: #e6e1e4;
+}
+
 .login-ava img{
-    margin-top: 12px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
     height: 50px;
     
     -webkit-border-radius: 50%;
@@ -131,8 +178,8 @@ body{
 }
 .login-rate{
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: 63px;
+    right: 5px;
     color: #fff;
     background: #55394d;
     font-size: 12px;
@@ -144,13 +191,12 @@ body{
 }
 .login-ava span{
     position: absolute;
-    top: 23px;
-    right: -12px;
-    width: 10px;
-}
-.login-ava span img{
+    top: 46px;
+    right: 0px;
     width: 8px;
-    height: 6px; 
+    height: 6px;
+    background: url(../img/ava-arr.png) center center no-repeat;
+    background-size: cover;
 }
 
 .login-btn{
@@ -168,6 +214,9 @@ body{
     color: #fff;
     font-size: 14px;
     padding: 4px 25px;
+    
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
 }
 .h-not-signed span{
     float: left;
@@ -194,18 +243,33 @@ body{
     color: #fff;
     position: relative;
     cursor: pointer;
+    
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
 }
 .nav-active{
     color: #55394d;
 }
-.nav-active span{
+.nav span{
     position: absolute;
     left: 0;
     bottom: 0;
     
-    height: 3px;
+    height: 0px;
     width: 100%;
     background: #55394d;
+    
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+.nav-active span{
+    height: 3px;
+}
+.nav:hover{
+    color: #55394d;
+}
+.nav:hover span{
+    height: 3px;
 }
 .nav-search{
     float: right;
@@ -274,6 +338,101 @@ body{
 .after-active{
     text-decoration: underline;
 }
+
+.pr-menu{
+    position: absolute;
+    
+    top: 89px;
+    right: 0px;
+    
+    height: auto;
+    width: 170px;
+    
+    background: #55394d;
+    display: none;
+}
+.pr-arrow{
+    position: absolute;
+    top: -6px;
+    right: 30px;
+    width: 8px;
+    height: 7px;
+    background: url(../img/pr-arrow.png) center center no-repeat;
+    background-size: cover;
+}
+.pr-row{
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+.pr-row p{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    
+    color: #e3e3e3;
+}
+.pr-row:hover p{
+    color: #ffb55d;
+}
+.pr1, .pr2, .pr3, .pr4, .pr5, .pr6, .pr7{
+    float: left;
+    
+    height: 16px;
+    width: 16px;
+    
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 12px;
+    margin-left: 17px;
+    
+    background: url(../img/pr-icons.png) no-repeat;
+}
+.pr1{
+    background-position: 0px 0px;
+}
+.pr2{
+    background-position: -32px 0px;
+}
+.pr3{
+    background-position: -64px 0px;
+}
+.pr4{
+    background-position: -96px 0px;
+}
+.pr5{
+    background-position: -128px 0px;
+}
+.pr6{
+    background-position: -160px 0px;
+}
+.pr7{
+    background-position: -192px 0px;
+}
+.pr-row:hover .pr1{
+    background-position: -16px 0px;
+}
+.pr-row:hover .pr2{
+    background-position: -48px 0px;
+}
+.pr-row:hover .pr3{
+    background-position: -80px 0px;
+}
+.pr-row:hover .pr4{
+    background-position: -112px 0px;
+}
+.pr-row:hover .pr5{
+    background-position: -144px 0px;
+}
+.pr-row:hover .pr6{
+    background-position: -176px 0px;
+}
+.pr-row:hover .pr7{
+    background-position: -208px 0px;
+}
+
+
 .aside{
     float: left;
     width: 320px;
@@ -300,7 +459,13 @@ body{
     
     height: 70px;
 }
-.pl-logo img{
+.m-logo{
+    float: left;
+    width: 100%;
+    
+    height: 100px;
+}
+.pl-logo img, .m-logo img{
     display: block;
     float: none;
     margin: auto;
@@ -337,6 +502,30 @@ body{
 
     color: #323232;
 }
+.md-input{
+    float: left;
+    width: 100%;
+    height: 15px;
+    padding: 15px;
+    
+    box-sizing: border-box;
+    margin-top: 15px;
+    
+    font-size: 14px;
+    line-height: 20px;
+    
+    border: none;
+    border: 1px solid #55394d;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    outline: none;
+    background: rgba(0,0,0,0);
+
+    color: #323232;
+}
 .js-aut, .js-reg{
     display: inline-block;
     width: auto;
@@ -345,6 +534,26 @@ body{
     margin: 0 5px;
     
     cursor: pointer;
+}
+.js-auth, .js-regi{
+    float: left;
+    width: 100%;
+    color: #55394d;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 3px;
+    
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+.md-auth, .md-regi{
+    display: inline-block;
+    width: auto;
+    color: #55394d;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 5px;
 }
 .js-aut.js-active, .js-reg.js-active{
     color: #ffb53e;
@@ -373,7 +582,13 @@ body{
     -moz-border-radius: 25px;
     border-radius: 25px;
     
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    
     font-size: 14px;
+}
+.pl-btn-mg{
+    margin-bottom: 15px;
 }
 .pl-rem{
     float: left;
@@ -449,7 +664,7 @@ body{
     background-position: -154px 0px;
     background-size: cover;
 }
-.js-form-reg{
+.js-form-reg, .md-form-reg{
     display: none;
 }
 
@@ -496,7 +711,13 @@ body{
 .time-active{
     text-decoration: underline;
 }
-
+.top-24, .top-week, .top-month{
+    float: left;
+    display: block;
+}
+.top-week, .top-month{
+    display: none;
+}
 .top-comment{
     float: left;
     width: 100%;
@@ -582,12 +803,12 @@ body{
 }
 .post{
     float: left;
-    margin: 0 25px 25px 65px;
+    margin: 0 25px 25px 50px;
     
     padding: 25px;
     box-sizing: border-box;
     
-    width: calc(100% - 65px);
+    width: calc(100% - 50px);
     
     background: #fff;
     
@@ -597,6 +818,9 @@ body{
     
     position: relative;
 }
+.post-margin{
+    margin: 0 25px 115px 50px;
+}
 .p-rate{
     position: absolute;
     
@@ -605,7 +829,7 @@ body{
     border-radius: 25px;
     
     top: 0;
-    left: -65px;
+    left: -50px;
     
     width: 34px;
     padding: 10px 6px;
@@ -628,9 +852,11 @@ body{
     transition: 0s linear;
 }
 .p-up{
+    margin-bottom: 25px;
     background-position: 0px 0px;
 }
 .p-down{
+    margin-top: 25px;
     background-position: -44px 0px;
 }
 .p-up.p-active{
@@ -646,21 +872,20 @@ body{
     background-position: -66px 0px;
 }
 .p-num{
-    float: left;
+    position: absolute;
     
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-
-    writing-mode: tb-rl;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     
     height: auto;
-    width: 22px;
-     
-    margin-top: 15px;
-    margin-bottom: 11px;
+    width: 50px;
+    
+    text-align: center;
+    top: 48px;
+    left: -9px;
     
     color: #797070;
     
@@ -703,8 +928,7 @@ body{
 }
 .p-comments{
     float: left;
-    width: calc(100% - 300px);
-    width: auto;
+    width: 400px;
     height: 25px;
     margin-top: 5px;
 }
@@ -728,7 +952,7 @@ body{
 }
 .p-tags{
     float: right;
-    width: auto;
+    width: calc(100% - 400px);
     
     text-align: right;
 }
@@ -808,10 +1032,10 @@ body{
     border: 1px solid #787171;
 }
 input:checked + .slider-checkbox {
-    background-color: #f2b44a;;
+    background-color: #ffb53e;
 }
 input:focus + .slider-checkbox {
-    box-shadow: 0 0 1px #f2b44a;;
+    box-shadow: 0 0 1px #ffb53e;
 }
 input:checked + .slider-checkbox:before {
     -webkit-transform: translateY(26px);

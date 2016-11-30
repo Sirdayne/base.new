@@ -27,8 +27,16 @@
 @media only screen and (max-width : 1200px) {
   
 }
-@media only screen and (max-width : 1070px) {
-    
+@media only screen and (max-width : 1100px) {
+    .p-tags{
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .p-tag{
+        margin-left: 0;
+        margin-right: 5px;
+    }
 }
 @media only screen and (max-width : 1000px) {
     

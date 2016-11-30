@@ -11,7 +11,7 @@
 	<title>Base - Главная</title>
 	<meta name="description" content="">
 	
-	<!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,9 +25,10 @@
 </head>
 <body>    
   
-   <!-- MODALS 
+   <!-- MODALS -->
+   <!--
     <div class="thx"><p>СПАСИБО! С ВАМИ СВЯЖЕТСЯ НАШ МЕНЕДЖЕР</p></div>
-    <div class="modal-back"></div>
+    
         
     <div class="modal">
     <div class="modal-close"></div>
@@ -53,6 +54,55 @@
         </form>
     </div>       
     <div class="modal-border"></div> 
+    -->
+    
+    <div class="modal-back"></div>
+    <div class="modal-form-wrap">
+        <div class="modal-form">
+            <div class="p-login">
+                <div class="m-logo">
+                    <img src="./img/base-logo.png" alt="">
+                </div>
+                
+                <div class="pl-row">
+                    <div class="md-auth md-form-aut">АВТОРИЗАЦИЯ</div>
+                    <div class="md-regi md-form-reg">РЕГИСТРАЦИЯ</div>
+                </div>
+                
+                <input type="text" class="md-input md-form-aut" placeholder="Логин...">
+                <input type="text" class="md-input md-form-aut" placeholder="Пароль...">
+                
+                <input type="text" class="md-input md-form-reg" placeholder="Логин...">
+                <input type="text" class="md-input md-form-reg" placeholder="E-mail...">
+                <input type="text" class="md-input md-form-reg" placeholder="Пароль...">
+                <input type="text" class="md-input md-form-reg" placeholder="Повторите пароль...">
+                
+                
+                <div class="pl-btn-wrap">
+                    <button class="pl-btn md-form-aut">Войти</button>
+                    <button class="pl-btn md-form-reg pl-btn-mg">Регистрация</button>
+                </div>
+                
+                <div class="pl-rem md-form-aut">
+                    <input type="checkbox" class="checkbox-1" id="checkbox-1" />
+                    <label for="checkbox-1">Запомнить меня</label>
+                </div>
+                
+               <div class="pl-icons">
+                   <div class="pl-log">Войти через: </div>
+                   <div class="pl-icon1"></div>
+                   <div class="pl-icon2"></div>
+                   <div class="pl-icon3"></div>
+                   <div class="pl-icon4"></div>
+               </div>
+               
+                <div class="js-regi md-form-aut">Еще не зарегистрированы?</div>
+                <div class="js-auth md-form-reg">Уже есть аккаунт? Авторизуйтесь</div>
+                
+            </div>
+        </div>
+    </div>
+    
     <!-- END OF MODALS -->
       
       
@@ -89,7 +139,18 @@
                                 <div class="login-rate">
                                     12
                                 </div>
-                                <span><img src="./img/ava-arr.png" alt=""></span>
+                                <span></span>
+                                
+                                <div class="pr-menu">
+                                    <div class="pr-arrow"></div>
+                                    <a href=""><div class="pr-row"><div class="pr1"></div><p>Настройки</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr2"></div><p>Лента</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr3"></div><p>Посты</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr4"></div><p>Сообщения</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr5"></div><p>Комментарии</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr6"></div><p>Оценки</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr7"></div><p>Сохраненное</p></div></a>
+                                </div>
                             </div>
                         </div>
                         <div class="h-not-signed">
@@ -104,19 +165,24 @@
       
     <section class="navigation">
         <div class="wrap">
+            <a href="">
             <div class="nav nav-active">
                 ВСЕ 
                 <span></span>
             </div>
+            </a>
+            <a href="">
             <div class="nav">
                 ЮМОР
                 <span></span>
             </div>
+            </a>
+            <a href="">
             <div class="nav">
                 НОВОСТИ 
                 <span></span>
             </div>
-            
+            </a>
             <div class="nav-search">
                 <input type="text" placeholder="Поиск по тегам...">
                 <div class="search-img">
@@ -128,8 +194,8 @@
     
     <section class="after-navigation">
         <div class="wrap">
-            <div class="after-nav after-active">По актуальности</div>
-            <div class="after-nav">За сегодня</div>
+            <a href=""><div class="after-nav after-active">По актуальности</div></a>
+            <a href=""><div class="after-nav">За сегодня</div></a>
         </div>
     </section>
       
@@ -150,19 +216,19 @@
                     </div>
                     <div class="p-post">
                         <div class="p-title">
-                            <p>Пикабу, сегодня у тебя праздник!</p>
-                            <div class="p-plus"><img src="./img/p-plus.png" alt=""></div>
-                            <div class="p-save"><img src="./img/p-save.png" alt=""></div>
+                            <a href=""><p>Пикабу, сегодня у тебя праздник!</p></a>
+                            <a href=""><div class="p-plus"><img src="./img/p-plus.png" alt=""></div></a>
+                            <a href=""><div class="p-save"><img src="./img/p-save.png" alt=""></div></a>
                         </div>
                         <div class="p-comments">
-                            <span>216</span><div class="p-coms"> комментариев</div>
-                            <div class="p-user">админ</div><div class="p-time">4</div><p> часа назад</p>
+                            <a href=""><span>216</span></a><div class="p-coms"> комментариев</div>
+                            <a href=""><div class="p-user">админ</div></a><div class="p-time">4</div><p> часа назад</p>
                         </div>
                         <div class="p-tags">
-                            <div class="p-tag">пикабу</div>
-                            <div class="p-tag">день рождения</div>
-                            <div class="p-tag">теги два</div>
-                            <div class="p-tag">теги три</div>
+                            <a href=""><div class="p-tag">пикабу</div></a>
+                            <a href=""><div class="p-tag">день рождения</div></a>
+                            <a href=""><div class="p-tag">теги два</div></a>
+                            <a href=""><div class="p-tag">теги три</div></a>
                         </div>
                         <div class="p-content">
                             <p>Дорогой Пикабу,<br>
@@ -185,9 +251,9 @@
                 
                 <div class="post">
                     <div class="p-rate">
-                        <div class="p-up p-active"></div>
+                        <div class="p-up"></div>
                         <div class="p-num">1806</div>
-                        <div class="p-down"></div>
+                        <div class="p-down p-active"></div>
                         <label class="switch-checkbox">
                             <input type="checkbox" class="input-switch" checked/>
                             <div class="slider-checkbox round">
@@ -198,19 +264,19 @@
                     </div>
                     <div class="p-post">
                         <div class="p-title">
-                            <p>Пикабу, сегодня у тебя праздник!</p>
-                            <div class="p-plus"><img src="./img/p-plus.png" alt=""></div>
-                            <div class="p-save"><img src="./img/p-save.png" alt=""></div>
+                            <a href=""><p>Пикабу, сегодня у тебя праздник!</p></a>
+                            <a href=""><div class="p-plus"><img src="./img/p-plus.png" alt=""></div></a>
+                            <a href=""><div class="p-save"><img src="./img/p-save.png" alt=""></div></a>
                         </div>
                         <div class="p-comments">
-                            <span>216</span><div class="p-coms"> комментариев</div>
-                            <div class="p-user">админ</div><div class="p-time">4</div><p> часа назад</p>
+                            <a href=""><span>216</span></a><div class="p-coms"> комментариев</div>
+                            <a href=""><div class="p-user">админ</div></a><div class="p-time">4</div><p> часа назад</p>
                         </div>
                         <div class="p-tags">
-                            <div class="p-tag">пикабу</div>
-                            <div class="p-tag">день рождения</div>
-                            <div class="p-tag">теги два</div>
-                            <div class="p-tag">теги три</div>
+                            <a href=""><div class="p-tag">пикабу</div></a>
+                            <a href=""><div class="p-tag">день рождения</div></a>
+                            <a href=""><div class="p-tag">теги два</div></a>
+                            <a href=""><div class="p-tag">теги три</div></a>
                         </div>
                         <div class="p-content">
                             <p>Дорогой Пикабу,<br>
@@ -232,9 +298,9 @@
                 </div>
                 
                 
-                <div class="post">
+               <div class="post">
                     <div class="p-rate">
-                        <div class="p-up p-active"></div>
+                        <div class="p-up"></div>
                         <div class="p-num">1806</div>
                         <div class="p-down"></div>
                         <label class="switch-checkbox">
@@ -247,19 +313,19 @@
                     </div>
                     <div class="p-post">
                         <div class="p-title">
-                            <p>Пикабу, сегодня у тебя праздник!</p>
-                            <div class="p-plus"><img src="./img/p-plus.png" alt=""></div>
-                            <div class="p-save"><img src="./img/p-save.png" alt=""></div>
+                            <a href=""><p>Пикабу, сегодня у тебя праздник!</p></a>
+                            <a href=""><div class="p-plus"><img src="./img/p-plus.png" alt=""></div></a>
+                            <a href=""><div class="p-save"><img src="./img/p-save.png" alt=""></div></a>
                         </div>
                         <div class="p-comments">
-                            <span>216</span><div class="p-coms"> комментариев</div>
-                            <div class="p-user">админ</div><div class="p-time">4</div><p> часа назад</p>
+                            <a href=""><span>216</span></a><div class="p-coms"> комментариев</div>
+                            <a href=""><div class="p-user">админ</div></a><div class="p-time">4</div><p> часа назад</p>
                         </div>
                         <div class="p-tags">
-                            <div class="p-tag">пикабу</div>
-                            <div class="p-tag">день рождения</div>
-                            <div class="p-tag">теги два</div>
-                            <div class="p-tag">теги три</div>
+                            <a href=""><div class="p-tag">пикабу</div></a>
+                            <a href=""><div class="p-tag">день рождения</div></a>
+                            <a href=""><div class="p-tag">теги два</div></a>
+                            <a href=""><div class="p-tag">теги три</div></a>
                         </div>
                         <div class="p-content">
                             <p>Дорогой Пикабу,<br>
@@ -279,6 +345,7 @@
                         </div>
                     </div>
                 </div>
+                
         </section>
         <aside class="aside">
             <div class="p-login">
@@ -294,12 +361,18 @@
                 <input type="text" class="pl-input js-form-aut" placeholder="Логин...">
                 <input type="text" class="pl-input js-form-aut" placeholder="Пароль...">
                 
+                <input type="text" class="pl-input js-form-reg" placeholder="Логин...">
+                <input type="text" class="pl-input js-form-reg" placeholder="E-mail...">
+                <input type="text" class="pl-input js-form-reg" placeholder="Пароль...">
+                <input type="text" class="pl-input js-form-reg" placeholder="Повторите пароль...">
+                
+                
                 <div class="pl-btn-wrap">
                     <button class="pl-btn js-form-aut">Войти</button>
-                    <button class="pl-btn js-form-reg">Регистрация</button>
+                    <button class="pl-btn js-form-reg pl-btn-mg">Регистрация</button>
                 </div>
                 
-                <div class="pl-rem">
+                <div class="pl-rem js-form-aut">
                     <input type="checkbox" class="checkbox-1" id="checkbox-1" />
                     <label for="checkbox-1">Запомнить меня</label>
                 </div>
@@ -318,39 +391,116 @@
                 <div class="top-title">
                     <p>Топ комментариев</p>
                     <div class="top-time">
-                        <span class="time-active">За 24 часа</span>
-                        <span>За неделю</span>
-                        <span>За месяц</span>
+                        <span class="js-time js-24 time-active">За 24 часа</span>
+                        <span class="js-time js-week">За неделю</span>
+                        <span class="js-time js-month">За месяц</span>
                     </div>
                 </div>
                 
-                <div class="top-comment">
-                    <h2>Пикабу, сегодня у тебя праздник!</h2>
-                    <div class="top-user">
-                        <img src="./img/ava.png" alt="">
-                        <div class="top-author">
-                            <h3>JOHN DOE</h3>
-                            <div class="top-rate">+401</div>
-                            <div class="top-num-time">4</div>
-                            <div class="def-time">часа назад</div>
+                <div class="top-24 js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>admin</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum recusandae hic, atque, iste repellendus dolores, earum officia unde deserunt, voluptates nobis obcaecati. Rem atque officia, enim dicta obcaecati quis veniam.</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum recusandae hic, atque, iste repellendus dolores, earum officia unde deserunt, voluptates nobis obcaecati. Rem atque officia, enim dicta obcaecati quis veniam.</p>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatibus voluptas ex doloribus odio consequatur magnam aliquid facere sapiente id. Provident consectetur dicta a. Dicta reiciendis ipsam tempore atque dolorem.</p>
+                    </div>
                 </div>
                 
-                <div class="top-comment">
-                    <h2>Пикабу, сегодня у тебя праздник!</h2>
-                    <div class="top-user">
-                        <img src="./img/ava.png" alt="">
-                        <div class="top-author">
-                            <h3>JOHN DOE</h3>
-                            <div class="top-rate">+401</div>
-                            <div class="top-num-time">4</div>
-                            <div class="def-text">часа назад</div>
+                <div class="top-week js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>Jago</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus atque praesentium, rerum deserunt tenetur iste dolorum explicabo laudantium dolore iusto nisi accusantium odio perspiciatis aut sunt magni, veritatis quidem nihil.</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatibus voluptas ex doloribus odio consequatur magnam aliquid facere sapiente id. Provident consectetur dicta a. Dicta reiciendis ipsam tempore atque dolorem.</p>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur quos distinctio dicta non, molestias, veritatis magnam officiis at, optio, dolor eligendi atque repellendus dolorem quo beatae fugiat corporis reprehenderit.</p>
+                    </div>
                 </div>
+                
+                <div class="top-month js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOESON</h3></a>
+                                <div class="top-rate">+4011</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam ex, aspernatur omnis rerum. Odit, fugiat quis temporibus nulla non voluptatibus nihil alias quidem saepe repellendus expedita porro eligendi, fugit!</p>
+                    </div>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad sequi, repellendus cupiditate nam et natus consequatur. A nihil reiciendis accusantium assumenda architecto illo veniam dolor necessitatibus, voluptates corrupti alias.</p>
+                    </div>
+                    
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa quaerat deserunt architecto magni ducimus ullam, tenetur tempora eius minus amet hic a eaque incidunt excepturi ab nam quisquam impedit!</p>
+                    </div>
+                </div>
+                
             </div>
             
             <div class="top-users">
@@ -361,7 +511,7 @@
                 <div class="top-user">
                     <img src="./img/ava.png" alt="">
                     <div class="top-author">
-                        <h3>JOHN DOE</h3>
+                        <a href=""><h3>JOHN DOE</h3></a>
                         <div class="top-rate">+401</div>
                         <div class="def-text">рейтинг</div>
                      </div>
@@ -370,7 +520,7 @@
                 <div class="top-user">
                     <img src="./img/ava.png" alt="">
                     <div class="top-author">
-                        <h3>JOHN DOE</h3>
+                        <a href=""><h3>JOHN DOE</h3></a>
                         <div class="top-rate">+401</div>
                         <div class="def-text">рейтинг</div>
                      </div>
@@ -379,7 +529,7 @@
                 <div class="top-user">
                     <img src="./img/ava.png" alt="">
                     <div class="top-author">
-                        <h3>JOHN DOE</h3>
+                        <a href=""><h3>administrator</h3></a>
                         <div class="top-rate">+401</div>
                         <div class="def-text">рейтинг</div>
                      </div>
@@ -388,7 +538,7 @@
                 <div class="top-user">
                     <img src="./img/ava.png" alt="">
                     <div class="top-author">
-                        <h3>JOHN DOE</h3>
+                        <a href=""><h3>JOHN DOE</h3></a>
                         <div class="top-rate">+401</div>
                         <div class="def-text">рейтинг</div>
                      </div>
@@ -397,7 +547,7 @@
                 <div class="top-user">
                     <img src="./img/ava.png" alt="">
                     <div class="top-author">
-                        <h3>JOHN DOE</h3>
+                        <a href=""><h3>admin</h3></a>
                         <div class="top-rate">+401</div>
                         <div class="def-text">рейтинг</div>
                      </div>
@@ -414,28 +564,36 @@
         <div class="wrap">
             <div class="footer-left">
                 <img src="./img/base-logo.png" alt="">
-                <div class="f-icon1"></div>
-                <div class="f-icon2"></div>
-                <div class="f-icon3"></div>
-                <div class="f-icon4"></div>
+                <a href=""><div class="f-icon1"></div></a>
+                <a href=""><div class="f-icon2"></div></a>
+                <a href=""><div class="f-icon3"></div></a>
+                <a href=""><div class="f-icon4"></div></a>
             </div>
             <div class="footer-mid">
+                <a href="">
                 <div class="nav nav-active">
                     ВСЕ 
                     <span></span>
                 </div>
+                </a>
+                <a href="">
                 <div class="nav">
                     ЮМОР
                     <span></span>
                 </div>
+                </a>
+                <a href="">
                 <div class="nav">
                     НОВОСТИ 
                     <span></span>
                 </div>
+                </a>
             </div>
             <div class="footer-right">
+                <a href="http://ginnova.kz" target="_blank">
                 <p>РАЗРАБОТАНО ЗА ДАСТАРХАНОМ</p>
                 <img src="./img/gi-logo.png" alt="">
+                </a>
             </div>
         </div>
     </footer>
@@ -446,169 +604,8 @@
 <script src="js/jquery.min.js"></script>
 	
 <script src="js/jquery.waypoints.min.js"></script>
-  
-<script src="js/slick.min.js"></script>
-<script>
-    $('#slick-slider').slick({
-        slidesToShow: 5,
-        centerPadding: '0px',
-        arrows: true,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-    ]
-    });
-</script>
    
-<script src="js/aurora.js"></script>
-    
-<script src="js/wow.min.js"></script>
-<script>
-    if ($(window).width() > 1200) {
-        new WOW().init();
-    }
-</script>
-    
-<script src="js/maskedinput.js"></script>
-<script type="text/javascript">	
-    jQuery(function($){$("#client-tel-for-consult").mask("+7(999)999-99-99");});
-    jQuery(function($){$("#client-tel-for-consult-2").mask("+7(999)999-99-99");});
-</script>
-   
-<script src="js/script.js"></script>
-
- <script>
-        var RunOnce = 1;
-    
-        $('.exp-numbers').waypoint( function(dir) {
-        
-                    if (RunOnce == 1) {
-            
-                         RunOnce = false;
-            
-                        $({n: 0}).animate({n: 18}, {
-                            duration: 2E3,
-                            step: function (a) {
-                                $("#val-1").html(Math.round(a))
-                            }
-                        })
-                        $({n: 0}).animate({n: 264}, {
-                            duration: 2E3,
-                            step: function (a) {
-                                $("#val-2").html(Math.round(a))
-                            }
-                        })
-                        $({n: 0}).animate({n: 45857}, {
-                            duration: 2E3,
-                            step: function (a) {
-                                $("#val-3").html(Math.round(a))
-                            }
-                        })
-                    }
-                        
-           }, {
-            offset: '100%'
-        }) 
-</script>
-
-<script type="text/javascript">
-        $(document).ready(function(){ 
-            
-            $('.art-slide').eq( 0 ).css('background', 'url(' + $('.art-slide img').eq( 0 ).attr('src') + ')  center center no-repeat');
-            $('.art-slide').eq( 0 ).css('background-size', 'cover');
-                
-            $('.article h2').click(function() {
-
-                var index = $(".article h2").index(this);
-                
-                $('.header-slide').hide();
-                
-                $('.art-slide').hide();
-                
-                console.log( index );
-                
-                var imgSrc = $('.art-slide img').eq( index ).attr('src');
-                
-                $('.art-slide').eq( index ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
-                $('.art-slide').eq( index ).css('background-size', 'cover');
-
-                $('.art-slide').eq( index ).show();
-                
-                $('.dynamic').html( index+1 );
-                
-                $('.slide-nav').removeClass('sd-nav-act');
-                $('.slide-nav').eq( index ).addClass('sd-nav-act');
-            /*
-            },function(){
-                
-                $('.art-slide').hide();
-                
-                $('.header-slide').show();
-                
-                $('.dynamic').html( '0' );
-            */                          
-            });
-        
-            
-            $('.slide-nav').click(function() {
-
-                var indexN = $(".slide-nav").index(this);
-                
-                $('.header-slide').hide();
-                
-                $('.art-slide').hide();
-                
-                var imgSrc = $('.art-slide img').eq( indexN ).attr('src');
-                
-                $('.art-slide').eq( indexN ).css('background', 'url(' + imgSrc + ')  center center no-repeat');
-                $('.art-slide').eq( indexN ).css('background-size', 'cover');
-
-                $('.art-slide').eq( indexN ).show();
-                
-                $('.dynamic').html( indexN+1 );
-                
-                $('.slide-nav').removeClass('sd-nav-act');
-                $('.slide-nav').eq( indexN ).addClass('sd-nav-act');
-            /*
-            },function(){
-                
-                $('.art-slide').hide();
-                
-                $('.header-slide').show();
-                
-                $('.dynamic').html( '0' );
-            */           
-            });
-        
-        });
-    
-    
-</script>
+<script src="js/base.js"></script>
 
 </body>
 </html>
