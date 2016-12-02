@@ -13,6 +13,8 @@ body{
     
     background: rgba(0,0,0,0.3);
     z-index: 10;
+    
+    display: none;
 }
 .modal-form-wrap{
     position: fixed;
@@ -21,6 +23,8 @@ body{
     height: 0;
     width: 100%;
     z-index: 11;
+    
+    display: none;
 }
 .modal-form{
     display: block;
@@ -126,8 +130,8 @@ body{
     font-size: 14px;
     padding: 4px 15px;
     
-    -webkit-transition: .3s linear;
-    transition: .3s linear;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
 }
 .add-btn:hover, .pl-btn:hover, .login-btn:hover{
     background: #ff961a;
@@ -215,8 +219,8 @@ body{
     font-size: 14px;
     padding: 4px 25px;
     
-    -webkit-transition: .3s linear;
-    transition: .3s linear;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
 }
 .h-not-signed span{
     float: left;
@@ -582,8 +586,8 @@ body{
     -moz-border-radius: 25px;
     border-radius: 25px;
     
-    -webkit-transition: .3s linear;
-    transition: .3s linear;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
     
     font-size: 14px;
 }
@@ -821,6 +825,7 @@ body{
 .post-margin{
     margin: 0 25px 115px 50px;
 }
+
 .p-rate{
     position: absolute;
     
@@ -987,6 +992,191 @@ body{
 }
 .p-content img{
     max-width: 100%;
+}
+
+/* КОММЕНТАРИИ ПОСТА */
+.post-comments{
+    float: left;
+    margin: 0 25px 10px 50px; 
+    
+    padding: 25px;
+    box-sizing: border-box;
+    
+    width: calc(100% - 50px);
+    
+    background: #fff;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    
+    position: relative;
+}
+.pc-reg{
+    float: left;
+    margin: 0 25px 35px 50px; 
+    
+    box-sizing: border-box;
+    
+    width: calc(100% - 50px);
+    
+    padding-bottom: 10px;
+    
+    border-bottom: 1px solid #dddddd;
+    
+    color: #848484;
+    
+    font-size: 14px;
+    text-align: right;
+}
+.pc-reg span{
+    color: #ffb55d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pc-similar{
+    float: left;
+    margin: 0 25px 15px 50px; 
+    
+    box-sizing: border-box;
+    
+    width: calc(100% - 50px);
+    
+    color: #ffb55d;
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+.pc-title{
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+    
+    border-bottom: 1px solid #dddddd;
+}
+.pc-coms{
+    float: left;
+    width: auto;
+    
+    font-size: 14px;
+    color: #7b7b7b;
+}
+.pc-add{
+    float: right;
+    width: auto;
+    
+    font-size: 14px;
+    color: #ffb55d;
+    
+    cursor: pointer;
+}
+.pc-comment{
+    float: left;
+    width: calc(100% - 50px);
+    padding: 0px 0px 0px 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    border-left: 1px solid #dddddd;
+    
+    position: relative;
+}
+.pc-com-ava{
+    position: absolute;
+    
+    top: 0;
+    left: -20px;
+    
+    width: 40px;
+    
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.pc-com-ava img{
+    width: inherit;
+}
+.pc-row{
+    float: left;
+    width: calc(100% - 20px );
+    margin-right: 20px;
+}
+.pc-nick{
+    float: left;
+    font-size: 15px;
+    
+    color: #373737;
+    font-weight: bold;
+}
+.pc-rate{
+    float: left;
+}
+.pc-rate span{
+    float: left;
+    font-size: 15px;
+    color: #ffb53e;
+    font-weight: bold;
+}
+.pc-answer{
+    float: right;
+    font-size: 15px;
+    
+    text-decoration: underline;
+    color: #ffb53e;
+    cursor: pointer;
+}
+.pc-up, .pc-down{
+    float: left;
+    
+    width: 20px;
+    height: 20px;
+    
+    background: url(../img/com-rate.png) no-repeat;
+    cursor: pointer;
+    
+    -webkit-transition: 0s linear;
+    transition: 0s linear;
+}
+.pc-up{
+    margin-top: 3px;
+    margin-left: 3px;
+    background-position: 0px 0px;
+    background-size: cover;
+}
+.pc-down{
+    margin-top: 1px;
+    margin-left: 3px;
+    background-position: -40px 0px;
+    background-size: cover;
+}
+.pc-up.pc-active{
+    background-position: -20px 0px;
+    background-size: cover;
+}
+.pc-down.pc-active{
+    background-position: -60px 0px;
+    background-size: cover;
+}
+.pc-up:hover{
+    background-position: -20px 0px;
+    background-size: cover;
+}
+.pc-down:hover{
+    background-position: -60px 0px;
+    background-size: cover;
+}
+.pc-text{
+    float: left;
+    width: calc(100% - 20px );
+    margin-right: 20px;
+    
+    padding-top: 10px;
+    padding-bottom: 25px;
+    
+    font-size: 14px;
+    color: #848484;
+    border-bottom: 1px solid #dddddd;
 }
 
 
