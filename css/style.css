@@ -798,6 +798,14 @@ body{
     font-size: 14px;
 }
 
+.wr-comment{
+    float: left;
+    width: calc(100% - 350px);
+    background: #f6f6f6;
+    
+    padding-top: 30px;
+}
+
 .posts{
     float: left;
     width: calc(100% - 350px);
@@ -1012,6 +1020,105 @@ body{
     
     position: relative;
 }
+.ps-comments{
+    margin: 0 25px 10px 0px; 
+    width: 100%;
+}
+.prof-ops{
+    float: left;
+    width: 100%;
+    
+    margin-bottom: 25px;
+    background: #55394d;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+.po-wrap-ava{
+    float: left;
+    width: 100%;
+    margin-top: 35px;
+}
+.po-ava{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    overflow: hidden;
+}
+.po-ava img{
+    float: left;
+    height: inherit;
+}
+.po-nick{
+    float: left;
+    width: 100%;
+    
+    margin-top: 12px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    
+    font-weight: bold;
+}
+.po-row{
+    float: left;
+    width: 100%;
+    
+    margin-top: 7px;
+    margin-bottom: 15px;
+    color: #ffb55d;
+    font-size: 13px;
+    text-align: center;
+}
+.po-col{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.po-part{
+    display: inline-block;
+    width: 105px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    
+    position: relative;
+}
+.po-part span{
+    display: inline-block;
+    width: 100%;
+    color: #ffb55d;
+    font-weight: bold;
+    font-size: 34px;
+}
+.po-part p{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.po-line{
+    position: absolute;
+    
+    height: 35px;
+    width: 1px;
+    
+    top: 7px;
+    left: -7px;
+    
+    background: #ffb55d;
+}
+
+
 .pc-reg{
     float: left;
     margin: 0 25px 35px 50px; 
@@ -1178,6 +1285,8 @@ body{
     color: #848484;
     border-bottom: 1px solid #dddddd;
 }
+
+
 
 
 

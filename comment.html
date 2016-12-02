@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Base - Внутри поста</title>
+	<meta name="description" content="">
+	
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/animate.css">
+   
+</head>
+<body>    
+  
+   <!-- MODALS -->
+   <!--
+    <div class="thx"><p>СПАСИБО! С ВАМИ СВЯЖЕТСЯ НАШ МЕНЕДЖЕР</p></div>
+    
+        
+    <div class="modal">
+    <div class="modal-close"></div>
+             
+    <span><div class="modal-line"></div>Оставьте Ваши контактные данные,
+и наши менеджеры свяжутся с Вами</span>
+            
+        <form method="post" action="">      
+            <!-- Hidden Required Fields 
+            <input type="hidden" name="project_name" value="aurora.kz">
+            <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+            <input type="hidden" name="form_subject" value="Заявка">
+            <!-- END Hidden Required Fields 
+
+            <input type="text" name="ФИО" placeholder="ФИО" required>
+            <input type="email" name="Почта" placeholder="E-mail">
+
+            <input type="tel" id="client-tel-for-consult" name="Телефон" placeholder="Телефон" required>
+            
+            <div class="modal-wrapper">
+                <button class="modal-button"><div class="modalb-line"></div><p>ОТПРАВИТЬ</p></button>
+            </div>
+        </form>
+    </div>       
+    <div class="modal-border"></div> 
+    -->
+    
+    <div class="modal-back"></div>
+    <div class="modal-form-wrap">
+        <div class="modal-form">
+            <div class="p-login">
+                <div class="m-logo">
+                    <img src="./img/base-logo.png" alt="">
+                </div>
+                
+                <div class="pl-row">
+                    <div class="md-auth md-form-aut">АВТОРИЗАЦИЯ</div>
+                    <div class="md-regi md-form-reg">РЕГИСТРАЦИЯ</div>
+                </div>
+                
+                <input type="text" class="md-input md-form-aut" placeholder="Логин...">
+                <input type="text" class="md-input md-form-aut" placeholder="Пароль...">
+                
+                <input type="text" class="md-input md-form-reg" placeholder="Логин...">
+                <input type="text" class="md-input md-form-reg" placeholder="E-mail...">
+                <input type="text" class="md-input md-form-reg" placeholder="Пароль...">
+                <input type="text" class="md-input md-form-reg" placeholder="Повторите пароль...">
+                
+                
+                <div class="pl-btn-wrap">
+                    <button class="pl-btn md-form-aut">Войти</button>
+                    <button class="pl-btn md-form-reg pl-btn-mg">Регистрация</button>
+                </div>
+                
+                <div class="pl-rem md-form-aut">
+                    <input type="checkbox" class="checkbox-1" id="checkbox-1" />
+                    <label for="checkbox-1">Запомнить меня</label>
+                </div>
+                
+               <div class="pl-icons">
+                   <div class="pl-log">Войти через: </div>
+                   <div class="pl-icon1"></div>
+                   <div class="pl-icon2"></div>
+                   <div class="pl-icon3"></div>
+                   <div class="pl-icon4"></div>
+               </div>
+               
+                <div class="js-regi md-form-aut">Еще не зарегистрированы?</div>
+                <div class="js-auth md-form-reg">Уже есть аккаунт? Авторизуйтесь</div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- END OF MODALS -->
+      
+      
+    <header class="header">
+            <div class="header-top">
+                <div class="wrap">
+                    <a href="">реклама</a>
+                    <a href="">список тегов</a>
+                    <a href="">тех поддержка</a>
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="wrap">
+                    <div class="h-logos">
+                        <div class="h-logo-m">
+                            <img src="./img/base-logo.png" alt="">
+                        </div>
+                        <div class="h-exp">
+                            <img src="./img/logo-explanation.png" alt="">
+                            <p>Развлекательный портал</p>
+                        </div>
+                    </div>
+                    <div class="h-login">
+                        <div class="h-signed">
+                            <button class="add-btn">
+                                + Добавить пост
+                            </button>
+                            <div class="login-nick">
+                                <p>JOHN DOE</p>
+                                <div><span>+401</span> рейтинг</div>
+                            </div>
+                            <div class="login-ava">
+                                <img src="./img/ava.png" alt="">
+                                <div class="login-rate">
+                                    12
+                                </div>
+                                <span></span>
+                                
+                                <div class="pr-menu">
+                                    <div class="pr-arrow"></div>
+                                    <a href=""><div class="pr-row"><div class="pr1"></div><p>Настройки</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr2"></div><p>Лента</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr3"></div><p>Посты</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr4"></div><p>Сообщения</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr5"></div><p>Комментарии</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr6"></div><p>Оценки</p></div></a>
+                                    <a href=""><div class="pr-row"><div class="pr7"></div><p>Сохраненное</p></div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-not-signed">
+                            <span>Регистрация</span>
+                            <button class="login-btn">Войти</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </header>
+      
+    <section class="navigation">
+        <div class="wrap">
+            <a href="">
+            <div class="nav nav-active">
+                ВСЕ 
+                <span></span>
+            </div>
+            </a>
+            <a href="">
+            <div class="nav">
+                ЮМОР
+                <span></span>
+            </div>
+            </a>
+            <a href="">
+            <div class="nav">
+                НОВОСТИ 
+                <span></span>
+            </div>
+            </a>
+            <div class="nav-search">
+                <input type="text" placeholder="Поиск по тегам...">
+                <div class="search-img">
+                    <img src="./img/search.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="after-navigation">
+        <div class="wrap">
+            <a href=""><div class="after-nav after-active">По актуальности</div></a>
+            <a href=""><div class="after-nav">За сегодня</div></a>
+        </div>
+    </section>
+      
+    <div class="wrap">
+        <section class="wr-comment">
+               
+                <section class="prof-ops">
+                    <div class="po-wrap-ava">
+                        <div class="po-ava">
+                            <img src="./img/ava-options.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="po-nick">JOHN DOE</div>
+                    
+                    <div class="po-row">зарегистрирован на сайте <span class="po-years">20</span> лет <span class="po-months">13</span> месяцев</div>
+                    
+                    <div class="po-col">
+                        <div class="po-part"><span>0</span><p>Постов</p></div>
+                        <div class="po-part"><span>32</span><p>Комментариев</p><div class="po-line"></div></div>
+                        <div class="po-part"><span>4</span><p>Подписчиков</p><div class="po-line"></div></div>
+                        <div class="po-part"><span>753</span><p>Рейтинг</p><div class="po-line"></div></div>
+                    </div>
+                </section>
+                
+                <section class="post-comments ps-comments">
+                    <div class="pc-title">
+                        <div class="pc-coms">Комментарии(<span>174</span>)</div>
+                        <div class="pc-add">+ Добавить комментарии</div>
+                    </div>
+                    
+                    <div class="pc-comment">
+                        <div class="pc-com-ava">
+                            <img src="./img/ava.png" alt="">
+                        </div>
+                        <div class="pc-row">
+                            <a href=""><div class="pc-nick">JOHN DOE</div></a>
+                            <div class="pc-answer">ответить</div>
+                        </div>
+                        <div class="pc-rate">
+                            <span>+401</span>
+                            <div class="pc-up"></div>
+                            <div class="pc-down"></div>
+                        </div>
+                        <div class="pc-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sed vitae odio sunt culpa dolores? Odit nostrum quas debitis ratione earum cupiditate molestiae totam. Id quos ab perferendis veritatis, sequi!
+                        </div>
+                    </div>
+                    
+                    <div class="pc-comment">
+                        <div class="pc-com-ava">
+                            <img src="./img/ava.png" alt="">
+                        </div>
+                        <div class="pc-row">
+                            <a href=""><div class="pc-nick">JOHN DOE</div></a>
+                            <div class="pc-answer">ответить</div>
+                        </div>
+                        <div class="pc-rate">
+                            <span>+401</span>
+                            <div class="pc-up"></div>
+                            <div class="pc-down"></div>
+                        </div>
+                        <div class="pc-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae magnam nihil ex ea eveniet deserunt dicta consequuntur, assumenda quod laboriosam quisquam repellendus sed, facilis unde dolor consequatur a, libero. Eum!
+                        </div>
+                        
+                        
+                        <div class="pc-comment">
+                            <div class="pc-com-ava">
+                                <img src="./img/ava.png" alt="">
+                            </div>
+                            <div class="pc-row">
+                                <a href=""><div class="pc-nick">JOHN DOE</div></a>
+                                <div class="pc-answer">ответить</div>
+                            </div>
+                            <div class="pc-rate">
+                                <span>+401</span>
+                                <div class="pc-up"></div>
+                                <div class="pc-down"></div>
+                            </div>
+                            <div class="pc-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sed vitae odio sunt culpa dolores? Odit nostrum quas debitis ratione earum cupiditate molestiae totam. Id quos ab perferendis veritatis, sequi!
+                            </div>
+                            
+                            <div class="pc-comment">
+                                <div class="pc-com-ava">
+                                    <img src="./img/ava.png" alt="">
+                                </div>
+                                <div class="pc-row">
+                                    <a href=""><div class="pc-nick">JOHN DOE</div></a>
+                                    <div class="pc-answer">ответить</div>
+                                </div>
+                                <div class="pc-rate">
+                                    <span>+401</span>
+                                    <div class="pc-up"></div>
+                                    <div class="pc-down"></div>
+                                </div>
+                                <div class="pc-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sed vitae odio sunt culpa dolores? Odit nostrum quas debitis ratione earum cupiditate molestiae totam. Id quos ab perferendis veritatis, sequi!
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="pc-comment">
+                            <div class="pc-com-ava">
+                                <img src="./img/ava.png" alt="">
+                            </div>
+                            <div class="pc-row">
+                                <a href=""><div class="pc-nick">JOHN DOE</div></a>
+                                <div class="pc-answer">ответить</div>
+                            </div>
+                            <div class="pc-rate">
+                                <span>+401</span>
+                                <div class="pc-up"></div>
+                                <div class="pc-down"></div>
+                            </div>
+                            <div class="pc-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sed vitae odio sunt culpa dolores? Odit nostrum quas debitis ratione earum cupiditate molestiae totam. Id quos ab perferendis veritatis, sequi!
+                            </div>
+                        </div>
+                </section>
+                <!--
+                <div class="pc-reg">
+                    Чтобы оставить комментарий, необходимо <span>зарегистрироваться</span> или <span>войти</span>
+                </div>
+                -->
+
+        </section>
+        <aside class="aside">
+            <div class="p-login">
+                <div class="pl-logo">
+                    <img src="./img/base-logo.png" alt="">
+                </div>
+                
+                <div class="pl-row">
+                    <div class="js-aut js-active">Авторизация</div>
+                    <div class="js-reg">Регистрация</div>
+                </div>
+                
+                <input type="text" class="pl-input js-form-aut" placeholder="Логин...">
+                <input type="text" class="pl-input js-form-aut" placeholder="Пароль...">
+                
+                <input type="text" class="pl-input js-form-reg" placeholder="Логин...">
+                <input type="text" class="pl-input js-form-reg" placeholder="E-mail...">
+                <input type="text" class="pl-input js-form-reg" placeholder="Пароль...">
+                <input type="text" class="pl-input js-form-reg" placeholder="Повторите пароль...">
+                
+                
+                <div class="pl-btn-wrap">
+                    <button class="pl-btn js-form-aut">Войти</button>
+                    <button class="pl-btn js-form-reg pl-btn-mg">Регистрация</button>
+                </div>
+                
+                <div class="pl-rem js-form-aut">
+                    <input type="checkbox" class="checkbox-1" id="checkbox-1" />
+                    <label for="checkbox-1">Запомнить меня</label>
+                </div>
+                
+               <div class="pl-icons">
+                   <div class="pl-log">Войти через: </div>
+                   <div class="pl-icon1"></div>
+                   <div class="pl-icon2"></div>
+                   <div class="pl-icon3"></div>
+                   <div class="pl-icon4"></div>
+               </div>
+                
+            </div>
+            
+            <div class="top-comments">
+                <div class="top-title">
+                    <p>Топ комментариев</p>
+                    <div class="top-time">
+                        <span class="js-time js-24 time-active">За 24 часа</span>
+                        <span class="js-time js-week">За неделю</span>
+                        <span class="js-time js-month">За месяц</span>
+                    </div>
+                </div>
+                
+                <div class="top-24 js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>admin</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum recusandae hic, atque, iste repellendus dolores, earum officia unde deserunt, voluptates nobis obcaecati. Rem atque officia, enim dicta obcaecati quis veniam.</p>
+                    </div>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatibus voluptas ex doloribus odio consequatur magnam aliquid facere sapiente id. Provident consectetur dicta a. Dicta reiciendis ipsam tempore atque dolorem.</p>
+                    </div>
+                </div>
+                
+                <div class="top-week js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>Jago</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus atque praesentium, rerum deserunt tenetur iste dolorum explicabo laudantium dolore iusto nisi accusantium odio perspiciatis aut sunt magni, veritatis quidem nihil.</p>
+                    </div>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aspernatur quos distinctio dicta non, molestias, veritatis magnam officiis at, optio, dolor eligendi atque repellendus dolorem quo beatae fugiat corporis reprehenderit.</p>
+                    </div>
+                </div>
+                
+                <div class="top-month js-top-time">
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOESON</h3></a>
+                                <div class="top-rate">+4011</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-time">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid totam ex, aspernatur omnis rerum. Odit, fugiat quis temporibus nulla non voluptatibus nihil alias quidem saepe repellendus expedita porro eligendi, fugit!</p>
+                    </div>
+
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ad sequi, repellendus cupiditate nam et natus consequatur. A nihil reiciendis accusantium assumenda architecto illo veniam dolor necessitatibus, voluptates corrupti alias.</p>
+                    </div>
+                    
+                    <div class="top-comment">
+                        <a href=""><h2>Пикабу, сегодня у тебя праздник!</h2></a>
+                        <div class="top-user">
+                            <img src="./img/ava.png" alt="">
+                            <div class="top-author">
+                                <a href=""><h3>JOHN DOE</h3></a>
+                                <div class="top-rate">+401</div>
+                                <div class="top-num-time">4</div>
+                                <div class="def-text">часа назад</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa quaerat deserunt architecto magni ducimus ullam, tenetur tempora eius minus amet hic a eaque incidunt excepturi ab nam quisquam impedit!</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="top-users">
+                <div class="top-title">
+                    <p>Топ комментариев</p>
+                </div>
+                
+                <div class="top-user">
+                    <img src="./img/ava.png" alt="">
+                    <div class="top-author">
+                        <a href=""><h3>JOHN DOE</h3></a>
+                        <div class="top-rate">+401</div>
+                        <div class="def-text">рейтинг</div>
+                     </div>
+                </div>
+                
+                <div class="top-user">
+                    <img src="./img/ava.png" alt="">
+                    <div class="top-author">
+                        <a href=""><h3>JOHN DOE</h3></a>
+                        <div class="top-rate">+401</div>
+                        <div class="def-text">рейтинг</div>
+                     </div>
+                </div>
+                
+                <div class="top-user">
+                    <img src="./img/ava.png" alt="">
+                    <div class="top-author">
+                        <a href=""><h3>administrator</h3></a>
+                        <div class="top-rate">+401</div>
+                        <div class="def-text">рейтинг</div>
+                     </div>
+                </div>
+                
+                <div class="top-user">
+                    <img src="./img/ava.png" alt="">
+                    <div class="top-author">
+                        <a href=""><h3>JOHN DOE</h3></a>
+                        <div class="top-rate">+401</div>
+                        <div class="def-text">рейтинг</div>
+                     </div>
+                </div>
+                
+                <div class="top-user">
+                    <img src="./img/ava.png" alt="">
+                    <div class="top-author">
+                        <a href=""><h3>admin</h3></a>
+                        <div class="top-rate">+401</div>
+                        <div class="def-text">рейтинг</div>
+                     </div>
+                </div>
+                
+                
+            </div>
+            
+        </aside>
+    </div>
+      
+    
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer-left">
+                <img src="./img/base-logo.png" alt="">
+                <a href=""><div class="f-icon1"></div></a>
+                <a href=""><div class="f-icon2"></div></a>
+                <a href=""><div class="f-icon3"></div></a>
+                <a href=""><div class="f-icon4"></div></a>
+            </div>
+            <div class="footer-mid">
+                <a href="">
+                <div class="nav nav-active">
+                    ВСЕ 
+                    <span></span>
+                </div>
+                </a>
+                <a href="">
+                <div class="nav">
+                    ЮМОР
+                    <span></span>
+                </div>
+                </a>
+                <a href="">
+                <div class="nav">
+                    НОВОСТИ 
+                    <span></span>
+                </div>
+                </a>
+            </div>
+            <div class="footer-right">
+                <a href="http://ginnova.kz" target="_blank">
+                <p>РАЗРАБОТАНО ЗА ДАСТАРХАНОМ</p>
+                <img src="./img/gi-logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+       
+    
+<script src="js/jquery-2.2.3.min.js"></script>
+    
+<script src="js/jquery.min.js"></script>
+	
+<script src="js/jquery.waypoints.min.js"></script>
+   
+<script src="js/base.js"></script>
+
+</body>
+</html>
